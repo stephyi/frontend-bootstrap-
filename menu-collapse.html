@@ -1,39 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta http-equiv="X-UA-Compatible" content="ie=edge">
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
-<link rel="stylesheet" href="style.css">
-<title>Collapsing the navigation bar</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Collapsing the navigation bar</title>
 </head>
+
 <body>
-<nav class="navbar navbar-expand-md bg-dark text-light fixed-top">
-    <a class="navbar-brand" href="#">
+
+    <!-- when you give a navbar a class of bg-dark also give it a class of navbar-dark to turn the text to a lighter color. Without navbar-dark the collapsed navbar wont be seen -->
+
+    <nav class="navbar navbar-expand-md bg-dark navbar-dark fixed-top">
+        <!-- TODO: try removing the navbar-dark class above -->
+        <a class="navbar-brand" href="#">
         Navbar<img>
     </a>
-    <button class="navbar-toggler" type="button" data-target="#collapsemenu" data-toggle="collapse">
+        <button class="navbar-toggler" type="button" data-target="#collapsemenu" data-toggle="collapse">
         <span class="navbar-toggler-icon"></span>
     </button>
-    <div class="navbar-collapse collapse" id="collapsemenu">
-        <ul class="navbar-nav">
-            <li class="nav-item">
-                <a href="#" class="nav-link">Home</a>
-            </li>
-            <li class="nav-item">
-                <a href="#" class="nav-link">Contact</a>
-            </li>
-            <li class="nav-item">
-                <a href="#" class="nav-link active">About</a>
-            </li>
-        </ul>
-    </div>
-</nav>
+        <div class="navbar-collapse collapse" id="collapsemenu">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Contact</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link active">About</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.slim.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.13.0/umd/popper.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.13.0/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/js/bootstrap.min.js"></script>
 </body>
+
 </html>
